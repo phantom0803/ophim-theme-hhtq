@@ -1,0 +1,277 @@
+body {
+    font-family: "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+[class*=col-],
+.myui-content__list li,
+.myui-vodlist__media.col li {
+    padding: 10px
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.myui-vodlist__thumb {
+    border-radius: 15px;
+    padding-top: 150%;
+    background: url(../ae01.alicdn.com/kf/Ufe6157eb158e4f7d8a268d830bc7b512m.jpg) no-repeat;
+}
+
+.myui-vodlist__thumb.square {
+    padding-top: 100%;
+    background: url(https://tva1.sinaimg.cn/large/007X8olVly1g7jy68sr1kg30dc0a03yg.jpg) no-repeat;
+}
+
+.myui-vodlist__thumb.wide {
+    padding-top: 60%;
+    background: url(https://ae01.alicdn.com/kf/Ufe6157eb158e4f7d8a268d830bc7b512m.gif) no-repeat;
+}
+
+.myui-vodlist__thumb.actor {
+    padding-top: 140%;
+}
+
+.flickity-prev-next-button.previous {
+    left: 10px;
+}
+
+.flickity-prev-next-button.next {
+    right: 10px;
+}
+
+.myui-sidebar {
+    padding: 0 0 0 20px;
+}
+
+.myui-panel {
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.myui-panel-mb {
+    margin-bottom: 20px;
+}
+
+.myui-player__item .fixed {
+    width: 500px;
+}
+
+.myui-vodlist__text li a,
+.myui-vodlist__media li {
+    padding: 10px 0;
+}
+
+.myui-screen__list {
+    padding: 10px 10px 0;
+}
+
+.myui-screen__list li {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.myui-page {
+    padding: 10px 0;
+    margin-bottom: 0 !important;
+}
+
+.myui-extra {
+    right: 20px;
+    bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container.min {
+        width: 1200px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    body,
+    body.active {
+        padding-bottom: 50px;
+    }
+
+    [class*=col-],
+    .myui-panel,
+    .myui-content__list li {
+        padding: 2px
+    }
+
+    .myui-content__detail {
+        float: left;
+        width: calc(100% - 120px);
+        padding-left: 5px;
+    }
+
+    .myui-content__detail .content {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .myui-panel-box {
+        padding: 5px;
+    }
+
+    .flickity-prev-next-button.previous {
+        left: 5px;
+    }
+
+    .flickity-prev-next-button.next {
+        right: 5px;
+    }
+
+    .myui-vodlist__text li a,
+    .myui-vodlist__media li {
+        padding: 10px 0;
+    }
+
+    .myui-screen__list {
+        padding: 10px 5px 0;
+    }
+
+    .myui-screen__list li {
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+    .myui-extra {
+        right: 20px;
+        bottom: 80px;
+    }
+
+    .myui-page {
+        padding: 0 5px;
+    }
+
+    .btn_watch {
+        font-size: 14px !important;
+    }
+}
+
+.myui-topbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.block-comments {
+    margin: 10px 0px 0px;
+}
+
+.page-single {
+    padding: 10px;
+    width: 670px;
+}
+
+.block-wrapper {
+    position: relative;
+    padding: 2px;
+    background: #fff;
+    border-bottom: 1px solid #868489;
+    color: #ddd;
+    height: auto;
+    display: block;
+}
+
+.myui-header__logo {
+    padding: 5px 0;
+}
+
+.select_filter {
+    font-size: 14px;
+    background-color: #333;
+    color: #ddd;
+    border: 0;
+    box-shadow: 0 0 2px 0 #adadad;
+}
+
+.btn_watch {
+    font-size: 16px;
+}
+
+.button_filter:hover, .btn_watch:hover {
+    opacity: 0.8;
+}
+.myui-page li {
+    padding: 5px 0 !important;
+    margin-left: 0 !important;
+}
+.myui-page li .num, .myui-page li a {
+    background-color: #333;
+}
+
+.myui-page li a.active {
+    background-color: rgb(24 23 23);
+}
+
+
+.myui-vodlist__media .detail h4.title {
+    margin: 0 !important;
+}
+
+.quality1 {
+    z-index: 99;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #00000066;
+}
+
+.imdbpost {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.myui-panel, .myui-panel-box {
+    padding: 3px;
+}
+
+.the_tag_list a {
+    background: #00000066;
+    border-radius: 2px;
+    margin: 0 5px 5px 0;
+    padding: 0 5px;
+}
+
+.myui-content__detail .box-rating {
+    overflow: hidden;
+}
+
+.box-rating {
+    margin: 0 0 5px;
+}
+
+.myui-player__operate {
+    justify-content: space-between;
+}
+
+.myui-player__operate ul {
+    display: flex;
+}
+
+.myui-player__operate > li > a.streaming-server {
+    cursor: pointer;
+    padding: 4px 8px;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.myui-player__operate > li > a.streaming-server:hover {
+    background: #ff9e11;
+}

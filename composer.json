@@ -1,0 +1,32 @@
+{
+    "name": "ophimcms/theme-hhtq",
+    "description": "Ophim's hhtq theme",
+    "type": "library",
+    "authors": [
+        {
+            "name": "ophimcms",
+            "email": "opdlnf01@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^6|^7|^8",
+        "ckfinder/ckfinder-laravel-package": "v3.5.2.1",
+        "hacoidev/ophim-core": "^1.0.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ophim\\ThemeHhtq\\": "src/",
+            "Ophim\\ThemeHhtq\\Database\\Factories\\": "database/factories/",
+            "Ophim\\ThemeHhtq\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ophim\\ThemeHhtq\\ThemeHhtqServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
