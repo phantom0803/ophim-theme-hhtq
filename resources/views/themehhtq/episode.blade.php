@@ -153,8 +153,8 @@
 
 @push('scripts')
 
-<script src="/themes/ipc/player/js/p2p-media-loader-core.min.js"></script>
-    <script src="/themes/ipc/player/js/p2p-media-loader-hlsjs.min.js"></script>
+<script src="/themes/hhtq/player/js/p2p-media-loader-core.min.js"></script>
+    <script src="/themes/hhtq/player/js/p2p-media-loader-hlsjs.min.js"></script>
 
     <script src="/js/jwplayer-8.9.3.js"></script>
     <script src="/js/hls.min.js"></script>
@@ -207,7 +207,7 @@
                         key: "{{ Setting::get('jwplayer_license') }}",
                         aspectratio: "16:9",
                         width: "100%",
-                        file: "/themes/ipc/player/1s_blank.mp4",
+                        file: "/themes/hhtq/player/1s_blank.mp4",
                         volume: 100,
                         mute: false,
                         autostart: true,
