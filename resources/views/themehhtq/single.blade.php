@@ -23,8 +23,8 @@
                 <div class="myui-content__thumb">
                     <a class="myui-vodlist__thumb img-md-220 img-sm-220 img-xs-130 picture" href="{{ $watch_url }}"
                         title="{{ $currentMovie->name }}">
-                        <img class="lazyload" src="{{ $currentMovie->thumb_url }}"
-                            data-original="{{ $currentMovie->thumb_url }}" />
+                        <img class="lazyload" src="{{ $currentMovie->getThumbUrl() }}"
+                            data-original="{{ $currentMovie->getThumbUrl() }}" />
                         <span class="play hidden-xs"></span></a>
                     @if ($watch_url)
                         <div class="imdbpost">
@@ -39,19 +39,19 @@
                     <div class="box-rating">
                         <input id="hint_current" type="hidden" value="">
                         <input id="score_current" type="hidden"
-                            value="{{ number_format($currentMovie->rating_star ?? 0, 1) }}">
-                        <div id="star" data-score="{{ number_format($currentMovie->rating_star ?? 0, 1) }}"
+                            value="{{$currentMovie->getRatingStar()}}">
+                        <div id="star" data-score="{{$currentMovie->getRatingStar()}}"
                             style="cursor: pointer; float: left; width: 200px;">
                         </div>
                         <span id="hint"></span>
                         <div id="div_average" style="float:left; line-height:20px; margin:0 5px; ">(<span class="average"
-                                id="average">{{ number_format($currentMovie->rating_star ?? 0, 1) }}</span> đ/<span
+                                id="average">{{$currentMovie->getRatingStar()}}</span> đ/<span
                                 id="rate_count"> /
-                                {{ $currentMovie->rating_count ?? 0 }}</span> lượt)
+                                {{$currentMovie->getRatingCount()}}</span> lượt)
                         </div>
                         <meta itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating" />
-                        <meta itemprop="ratingValue" content="{{ number_format($currentMovie->rating_star ?? 0, 1) }}" />
-                        <meta itemprop="ratingcount" content="{{ $currentMovie->rating_count ?? 0 }}" />
+                        <meta itemprop="ratingValue" content="{{$currentMovie->getRatingStar()}}" />
+                        <meta itemprop="ratingcount" content="{{$currentMovie->getRatingCount()}}" />
                         <meta itemprop="bestRating" content="10" />
                         <meta itemprop="worstRating" content="1" />
                     </div>
@@ -157,7 +157,7 @@
                             </div>
                         </div>
 
-                        <div class="tab-content myui-panel_bd">
+                        <div class="tab-content myui-panel_bd" style="background-color: #fff; border-radius: 20px;">
                             <div class="fb-comments" data-href="{{ $currentMovie->getUrl() }}" data-width="100%"
                                 data-colorscheme="dark" data-numposts="5" data-order-by="reverse_time" data-lazy="true"></div>
                         </div>

@@ -1,6 +1,6 @@
 <div class="myui-vodlist__box">
     <a href="{{ $movie->getUrl() }}" class="myui-vodlist__thumb" title="{{ $movie->name }}"
-        style="background: url({{ $movie->thumb_url }});">
+        style="background: url({{ $movie->getThumbUrl() }});">
         <span class="play hidden-xs"></span>
         <span class="pic-tag pic-tag-top" style="background-color: #00000066;">{{$movie->episode_current}}</span></a>
     <div class="myui-vodlist__detail">

@@ -12,7 +12,7 @@
                         <li>
                             <div class="thumb">
                                 <a class="myui-vodlist__thumb img-xs-70"
-                                style="background: url({{$movie->thumb_url}});"
+                                style="background: url({{$movie->getThumbUrl()}});"
                                 href="{{$movie->getUrl()}}" title="{{$movie->name}}"></a>
                             </div>
                             <div class="detail detail-side">
