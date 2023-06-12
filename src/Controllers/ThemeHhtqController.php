@@ -50,7 +50,7 @@ class ThemeHhtqController
                 if (request('filter')['sort'] == 'view') {
                     return $movie->orderBy('view_total', 'desc');
                 }
-            })->paginate();
+            })->paginate(get_theme_option('per_page_limit'));
 
             return view('themes::themehhtq.catalog', [
                 'data' => $data,
